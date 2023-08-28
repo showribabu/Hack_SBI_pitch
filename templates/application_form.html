@@ -13,18 +13,5 @@
     </form>
 </body>
 
-// Include SocketIO script in your HTML
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
-
-// Initialize SocketIO
-var socket = io();
-
-// When you want to update the status (e.g., after approval):
-socket.emit('status_update', {
-    application_id: applicationId, // Replace with actual application ID
-    new_status: 'Approved' // Replace with the new status
-});
-
-
 </html>
 
